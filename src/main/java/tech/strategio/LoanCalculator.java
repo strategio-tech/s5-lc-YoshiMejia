@@ -6,13 +6,16 @@ public class LoanCalculator {
 
     /**
      * TODO: finish out this JavaDoc comment block.
-     * FIXME: WHAT DOES THIS METHOD DO?
+     * FIXME: Calculate remaining balance of loan after 3 months of payments
      * 
-     * @param ???
-     * @return ???
+     * @param Initial loan amount as an integer
+     * @return Remainder of loan (as an integer) after 3 months of payments
      */
     static int getRemainingAmountIn3Months(int amount) {
-        // TODO: Add your code below
+    	for (int i = 0; i < 3; i++) {
+    		amount = amount - amount/10;
+    	}
+    	return amount;
     }
 
     public static void main(String[] args) {
